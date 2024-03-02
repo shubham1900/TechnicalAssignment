@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Assignment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="tabs">
+  <div class="tab-header">
+    <ul class="tab-list">
+      <!-- Default tab -->
+      <li class="tab-list-item active" data-tab="tab1">Tab 1 <span class="close">x</span></li>
+    </ul>
+    <div class="add-tab">+</div> 
+  </div>
+  <div class="tab-contents">
+   
+    <div class="tab-content active" id="tab1">
+      <div class="searchBox">
+        <input type="text" class="url-input" placeholder="Enter URL">
+        <button class="go-btn">Go</button>
+      </div>
+      <iframe class="tab-iframe" src="" frameborder="0"></iframe> 
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../Controller/script.js"></script>
+</body>
+</html>

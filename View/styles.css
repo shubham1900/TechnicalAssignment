@@ -1,0 +1,133 @@
+
+.tab-header {
+  display: flex;
+  align-items: center;
+}
+
+.tab-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.tab-list-item {
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #77b1ba89;
+  border: 1px solid #5b8dacc3;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tab-list-item.active {
+  background-color: #557cae;
+}
+
+.active-dot {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  border-radius: 50%;
+  display: none;
+}
+
+.tab-list-item.active .active-dot {
+  display: block;
+}
+
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  height: 80vh;
+  border: 1px solid #bf8181;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color:#a49bbc
+
+}
+
+.tab-content.active {
+  display: block;
+}
+
+
+.add-tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+  transition: background 0.3s ease;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.add-tab:hover {
+  background: linear-gradient(to bottom, #e0e0e0, #d0d0d0);
+}
+
+
+.close {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+.searchBox {
+  display: flex;
+  max-width: 230vw;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #2f3640;
+  border-radius: 50px;
+  position: relative;
+}
+
+.url-input {
+  width: 91vw;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #191212;
+   
+    background-color: #f1f1f1;
+    color: #2d2929;
+    border-radius: inherit;
+}
+
+
+.go-btn {
+  
+  color: white;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow .15s, transform .15s;
+
+ 
+  font-weight: bold;
+  font-size: 14px; 
+}
+
+.go-btn:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.tab-iframe {
+  width: 100%;
+  height: calc(100% - 50px); 
+  border: none;
+  border-top: 1px solid #ccc; 
+  padding: 10px; 
+  box-sizing: border-box; 
+}
